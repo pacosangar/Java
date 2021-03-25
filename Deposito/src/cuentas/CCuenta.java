@@ -33,7 +33,7 @@ public class CCuenta {
             throw new Exception ("No se puede retirar una cantidad negativa");
         if (getSaldo()< cantidad)
             throw new Exception ("No se hay suficiente saldo");
-        saldo = saldo - cantidad;
+        setSaldo(getSaldo() - cantidad);
     }
     
     public String getNombre() {
