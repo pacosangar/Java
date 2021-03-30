@@ -10,6 +10,7 @@ public class CCuenta {
 
     public CCuenta()
     {
+    	System.out.println("Constructor cuenta 2");
     }
 
     public CCuenta(String nom, String cue, double sal, double tipo)

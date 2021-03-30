@@ -10,7 +10,7 @@ public class Main {
 		case ("retirar"):
 			try {
 				cuenta1.retirar(cantidad);
-				System.out.println("RETIRAR -> El saldo actual es " + cuenta1.getSaldo());
+				System.out.println("RETIRAR " + cantidad + " -> El saldo actual es " + cuenta1.getSaldo());
 
 			} catch (Exception e) {
 				System.out.print("Fallo al retirar");
@@ -18,9 +18,9 @@ public class Main {
 			break;
 		case ("ingresar"):
 			try {
-				System.out.println("Ingreso en cuenta");
+				//System.out.println("Ingreso en cuenta");
 				cuenta1.ingresar(cantidad);
-				System.out.println("INGRESO -> El saldo actual es " + cuenta1.getSaldo());
+				System.out.println("INGRESO " + cantidad +  "-> El saldo actual es " + cuenta1.getSaldo());
 			} catch (Exception e) {
 				System.out.print("Fallo al ingresar");
 			};
